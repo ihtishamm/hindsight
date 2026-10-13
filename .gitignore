@@ -1,0 +1,4 @@
+node_modules
+dist
+# copied from node_modules/stockfish by `npm install` (scripts/copy-engine.mjs)
+public/engine
