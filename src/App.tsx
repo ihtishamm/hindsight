@@ -13,6 +13,7 @@ import { EvalBar } from './components/EvalBar';
 import { AnalyzingPanel, type AnalyzeStage } from './components/AnalyzingPanel';
 import { Avatar, TitleBadge } from './components/Avatar';
 import { EvalGraph } from './components/EvalGraph';
+import { GitHubLink } from './components/GitHubLink';
 import { InsightsPanel } from './components/InsightsPanel';
 import { Chevron, MoveStrip } from './components/MoveStrip';
 import { gameEndBadges, outcomeFor } from './components/GameEndBadges';
@@ -541,6 +542,7 @@ export function App() {
             <button className="ghost" onClick={() => setView({ kind: 'import' })}>New review</button>
           </>
         )}
+        <GitHubLink />
         <button
           className="ghost icon"
           aria-label={`Theme: ${theme}`}

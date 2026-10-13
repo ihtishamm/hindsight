@@ -18,6 +18,7 @@ export const DEPTHS = [
   { depth: 12, label: 'Fast' },
   { depth: 16, label: 'Standard' },
   { depth: 20, label: 'Deep' },
+  { depth: 26, label: 'Max' },
 ];
 
 type Source = Site | 'pgn';

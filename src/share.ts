@@ -88,7 +88,7 @@ export async function readShareHash(hash: string): Promise<ShareState | undefine
   const move = Number(q.get('move'));
   return {
     pgn: await decodeGame(game),
-    depth: [12, 16, 20].includes(depth) ? depth : undefined,
+    depth: [12, 16, 20, 26].includes(depth) ? depth : undefined,
     orientation: q.get('orientation') === 'black' ? 'black' : 'white',
     move: Number.isInteger(move) && move > 0 ? move : 0,
   };

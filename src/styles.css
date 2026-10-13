@@ -3097,6 +3097,29 @@ cg-board square.check {
 .topbar button {
   white-space: nowrap;
 }
+.github-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  min-height: 2.2rem;
+  padding: 0.3rem 0.6rem;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  color: inherit;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: border-color 0.15s;
+}
+.github-link:hover {
+  border-color: var(--muted);
+}
+.github-stars {
+  font-size: 0.85rem;
+  font-variant-numeric: tabular-nums;
+}
+.github-stars > span {
+  color: var(--accent);
+}
 @media (max-width: 560px) {
   .topbar {
     gap: 0.4rem;
@@ -3115,6 +3138,12 @@ cg-board square.check {
   .topbar .share-btn {
     min-width: 2.1rem;
     padding: 0.3rem 0.4rem;
+  }
+  .github-link {
+    padding: 0.3rem 0.4rem;
+  }
+  .github-stars {
+    display: none;
   }
   .topbar .ghost:not(.icon):not(.share-btn) {
     padding: 0.4rem 0.5rem;
